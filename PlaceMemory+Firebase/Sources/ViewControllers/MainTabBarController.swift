@@ -16,6 +16,8 @@ class MainTabBarController: UITabBarController {
   // MARK: View Life Cycle
   
   override func viewDidLoad() {
+    self.delegate = self
+    
     let homeNavagationController = self.templateNavigationController(unselectedImage: #imageLiteral(resourceName: "tab-home-unselected"), selectedImage: #imageLiteral(resourceName: "tab-home-selected"), rootViewController: UserProfileViewController(collectionViewLayout: UICollectionViewFlowLayout()))
     
     let searchNavagationController = self.templateNavigationController(unselectedImage: #imageLiteral(resourceName: "tab-search-unselected"), selectedImage: #imageLiteral(resourceName: "tab-search-selected"), rootViewController: UIViewController())
@@ -48,6 +50,23 @@ class MainTabBarController: UITabBarController {
     navigationController.tabBarItem.image = unselectedImage
     navigationController.tabBarItem.selectedImage = selectedImage
     return navigationController
+  }
+  
+}
+
+
+// MARK: - UITabBarControllerDelegate
+
+extension MainTabBarController: UITabBarControllerDelegate {
+  
+  func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    let index = self.viewControllers?.index(of: viewController)
+    if index == 2 {
+      let navigationController = UINavigationController(rootViewController: PhotoSelectorViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+      self.present(navigationController, animated: true, completion: nil)
+      return false
+    }
+    return true
   }
   
 }
