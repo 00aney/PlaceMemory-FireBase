@@ -93,7 +93,7 @@ class PhotoSelectorViewController: UICollectionViewController {
     //background thread
     DispatchQueue.global(qos: .background).async {
       allPhotos.enumerateObjects({ [weak self] asset, index, stop in
-        print(index)
+//        print(index)
         guard let `self` = self else { return }
         
         // download image & set image
@@ -135,8 +135,9 @@ class PhotoSelectorViewController: UICollectionViewController {
   }
   
   fileprivate dynamic func nextButtonDidTap() {
-    let sharePhotoViewController = SharePhotoViewController()
-    self.present(sharePhotoViewController, animated: true, completion: nil)
+    guard let image = self.selectedImage else { return }
+    let sharePhotoViewController = SharePhotoViewController(image: image)
+    self.navigationController?.pushViewController(sharePhotoViewController, animated: true)
   }
 }
 

@@ -15,7 +15,7 @@ class PhotoSelectorHeader: UICollectionViewCell {
   
   let photoImageView: UIImageView = {
     let iv = UIImageView()
-//    iv.contentMode = .
+    iv.contentMode = .scaleAspectFill
     iv.clipsToBounds = true
     iv.backgroundColor = .lightGray
     return iv
@@ -44,7 +44,7 @@ class PhotoSelectorHeader: UICollectionViewCell {
     
     guard let asset = asset else { return }
     let imageManager = PHImageManager.default()
-    let targetSize = CGSize(width: 600, height: 600)
+    let targetSize = CGSize(width: 800, height: 800)
     
     imageManager.requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFit, options: nil) { [weak self] image, info in
       guard let `self` = self else { return }

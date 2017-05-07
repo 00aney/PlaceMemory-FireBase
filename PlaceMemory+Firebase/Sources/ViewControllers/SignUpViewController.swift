@@ -280,4 +280,3 @@ extension SignUpViewController: UIImagePickerControllerDelegate {
 extension SignUpViewController: UINavigationControllerDelegate {
   
 }
-
