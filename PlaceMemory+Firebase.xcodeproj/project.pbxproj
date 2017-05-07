@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BD0FE9F61EBDD67000DA83ED /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FE9F51EBDD67000DA83ED /* PhotoSelectorCell.swift */; };
 		BD1199221EBDAF76005485FF /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1199211EBDAF76005485FF /* PhotoSelectorViewController.swift */; };
+		BD128BF51EBEDEDD00EF596E /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD128BF41EBEDEDD00EF596E /* SharePhotoViewController.swift */; };
+		BD128BF71EBEE5C700EF596E /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD128BF61EBEE5C700EF596E /* PhotoSelectorHeader.swift */; };
 		BD55307F1EBC8CB300EBD883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD55306D1EBC8CB200EBD883 /* Assets.xcassets */; };
 		BD5530801EBC8CB300EBD883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD55306E1EBC8CB200EBD883 /* LaunchScreen.storyboard */; };
 		BD5530811EBC8CB300EBD883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5530701EBC8CB300EBD883 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		7F3ACD76DDEA8F3BBB4E9299 /* Pods-PlaceMemory+Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceMemory+Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceMemory+Firebase/Pods-PlaceMemory+Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		BD0FE9F51EBDD67000DA83ED /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		BD1199211EBDAF76005485FF /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		BD128BF41EBEDEDD00EF596E /* SharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
+		BD128BF61EBEE5C700EF596E /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
 		BD55303C1EB6535800EBD883 /* PlaceMemory+Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlaceMemory+Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD55306D1EBC8CB200EBD883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD55306F1EBC8CB300EBD883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				BD55307A1EBC8CB300EBD883 /* SignUpViewController.swift */,
 				BD55308C1EBC94AD00EBD883 /* UserProfileViewController.swift */,
 				BD1199211EBDAF76005485FF /* PhotoSelectorViewController.swift */,
+				BD128BF41EBEDEDD00EF596E /* SharePhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			children = (
 				BD55308E1EBC9CB300EBD883 /* UserProfileHeader.swift */,
 				BD0FE9F51EBDD67000DA83ED /* PhotoSelectorCell.swift */,
+				BD128BF61EBEE5C700EF596E /* PhotoSelectorHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,12 +321,14 @@
 				BD5530821EBC8CB300EBD883 /* AppDelegate.swift in Sources */,
 				BD5530841EBC8CB300EBD883 /* Float+Extension.swift in Sources */,
 				BD55308F1EBC9CB300EBD883 /* UserProfileHeader.swift in Sources */,
+				BD128BF71EBEE5C700EF596E /* PhotoSelectorHeader.swift in Sources */,
 				BD55308D1EBC94AD00EBD883 /* UserProfileViewController.swift in Sources */,
 				BD5530891EBC90B500EBD883 /* UIColor+rgb.swift in Sources */,
 				BD5530911EBCA74800EBD883 /* User.swift in Sources */,
 				BD1199221EBDAF76005485FF /* PhotoSelectorViewController.swift in Sources */,
 				BD55308B1EBC938200EBD883 /* MainTabBarController.swift in Sources */,
 				BD5530851EBC8CB300EBD883 /* SignUpViewController.swift in Sources */,
+				BD128BF51EBEDEDD00EF596E /* SharePhotoViewController.swift in Sources */,
 				BD0FE9F61EBDD67000DA83ED /* PhotoSelectorCell.swift in Sources */,
 				BD5530931EBCAFEB00EBD883 /* LoginViewController.swift in Sources */,
 				BD5530831EBC8CB300EBD883 /* Extensions.swift in Sources */,
